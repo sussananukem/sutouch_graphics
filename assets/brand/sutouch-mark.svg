@@ -1,0 +1,14 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sutouchGradient" x1="28" y1="24" x2="132" y2="136" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E58D58"/>
+      <stop offset="0.55" stop-color="#C45C37"/>
+      <stop offset="1" stop-color="#D8A44F"/>
+    </linearGradient>
+  </defs>
+  <circle cx="80" cy="80" r="62" fill="#FFF8F0"/>
+  <circle cx="80" cy="80" r="60" stroke="url(#sutouchGradient)" stroke-width="4"/>
+  <path d="M103 48C95.8 38.8 84.7 34 72.3 34C55.9 34 43 42.7 43 56.6C43 69.1 52.3 75.8 69.2 80.1L82.6 83.6C92.8 86.2 98 89.8 98 96.1C98 104.2 89.6 110 77.8 110C65.8 110 56.6 104.9 50.7 95.6" stroke="#201914" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M80 47V114" stroke="url(#sutouchGradient)" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="112.5" cy="49.5" r="8.5" fill="#201914"/>
+</svg>

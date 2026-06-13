@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sussan Anukem | Logo Portfolio</title>
+    <meta
+      name="description"
+      content="Logo portfolio of Sussan Anukem, a graphic designer creating branding concepts for restaurants, bakeries, salons, and growing businesses."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="backdrop backdrop-one" aria-hidden="true"></div>
+      <div class="backdrop backdrop-two" aria-hidden="true"></div>
+
+      <div class="site-brand reveal">
+        <div class="site-brand-shell">
+          <a class="brand-lockup" href="#top" aria-label="SuTouch home">
+            <img src="./assets/brand/sutouch-mark.svg" alt="SuTouch logo mark" class="brand-mark" />
+            <div class="brand-copy">
+              <p class="brand-name">SuTouch</p>
+              <p class="brand-subtitle">Brand Identity Studio</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <header class="hero" id="top">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Sussan Anukem</p>
+          <p class="hero-role">Graphic Designer | Logo &amp; Brand Identity</p>
+          <h1>Creative logo identities designed to help businesses look polished and memorable.</h1>
+          <p class="hero-text">
+            I'm Sussan Anukem, a graphic designer focused on building clean, expressive brand visuals for
+            restaurants, bakeries, salons, and growing businesses. This portfolio brings together curated
+            logo concept boards designed to show how each identity could live across signage, packaging,
+            menus, and client-facing brand materials.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#collection">View Portfolio</a>
+            <a class="button button-secondary" href="#about">About Me</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel reveal">
+          <div class="hero-panel-card">
+            <p class="panel-label">Collection Snapshot</p>
+            <div class="stat-grid" id="stat-grid"></div>
+            <div class="panel-note">
+              Includes restaurant branding, bakery concepts, salon identity boards, and diverse
+              consumer-brand showcases.
+            </div>
+          </div>
+        </aside>
+      </header>
+
+      <main>
+        <section id="about" class="about reveal">
+          <div class="about-card">
+            <div class="about-layout">
+              <div class="about-portrait">
+                <div class="portrait-frame">
+                  <img
+                    src="./assets/profile/sussan-anukem.jpg"
+                    alt="Portrait of Sussan Anukem"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="about-copy">
+                <p class="section-kicker">About Me</p>
+                <h2>Sussan Anukem</h2>
+                <p class="about-tagline">Helping brands look elegant, modern, and memorable.</p>
+                <p class="about-studio">Founder, SuTouch</p>
+                <p>
+                  I create branding concepts that balance creativity with clarity, with special interest in
+                  hospitality, beauty, and lifestyle businesses. My approach is to design logos that feel strong
+                  not only on screen, but also in the real places people experience a brand, from storefronts
+                  and packaging to menus, cards, and social content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="toolbar reveal" aria-labelledby="collection-title">
+          <div>
+            <p class="section-kicker">Curated Galleries</p>
+            <h2 id="collection-title">Browse by category</h2>
+          </div>
+          <div class="filter-group" id="filter-group" aria-label="Portfolio categories"></div>
+        </section>
+
+        <section id="collection" class="collection" aria-live="polite"></section>
+      </main>
+    </div>
+
+    <dialog class="lightbox" id="lightbox">
+      <form method="dialog" class="lightbox-shell">
+        <button class="lightbox-close" type="submit" aria-label="Close preview">Close</button>
+        <div class="lightbox-media">
+          <img id="lightbox-image" alt="" />
+        </div>
+        <div class="lightbox-copy">
+          <p class="lightbox-category" id="lightbox-category"></p>
+          <h3 id="lightbox-title"></h3>
+          <p id="lightbox-description"></p>
+          <div class="tag-row" id="lightbox-tags"></div>
+        </div>
+      </form>
+    </dialog>
+
+    <template id="section-template">
+      <section class="category-section reveal">
+        <div class="category-heading">
+          <div>
+            <p class="section-kicker category-kicker"></p>
+            <h3 class="category-title"></h3>
+          </div>
+          <p class="category-description"></p>
+        </div>
+        <div class="card-grid"></div>
+      </section>
+    </template>
+
+    <template id="card-template">
+      <article class="portfolio-card">
+        <button class="card-media" type="button">
+          <img alt="" loading="lazy" />
+        </button>
+        <div class="card-body">
+          <div class="card-topline">
+            <p class="card-category"></p>
+            <span class="card-style"></span>
+          </div>
+          <h4 class="card-title"></h4>
+          <p class="card-description"></p>
+          <div class="tag-row card-tags"></div>
+        </div>
+      </article>
+    </template>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
